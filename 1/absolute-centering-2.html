@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>絶対配置による中央寄せ 2（fit-content）</title>
+  <style>
+  .container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 1px solid silver;
+  }
+
+  .centered {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: fit-content;
+    max-width: 80%;
+    height: min-content;
+    background-color: mistyrose;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="centered">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+</div>
+
+</body>
+</html>

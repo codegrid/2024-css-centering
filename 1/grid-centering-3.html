@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>CSS Gridによる中央寄せ 3</title>
+  <style>
+  button {
+    all: unset;
+    display: grid;
+    place-content: center;
+    column-gap: 10px;
+    row-gap: 5px;
+    width: 200px;
+    height: 100px;
+    border: 1px solid silver;
+    line-height: 1;
+  }
+
+  .icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+
+  .main {
+    grid-column: 2 / 3;
+    grid-right: 1 / 2;
+  }
+
+  .sub {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 11px;
+  }
+  </style>
+</head>
+<body>
+
+<p>
+  <button>
+    <span class="icon">😀</span>
+    <span class="main">にっこり</span>
+    <span class="sub">Grinning Face</span>
+  </button>
+</p>
+
+<p>
+  <button>
+    <span class="icon">😀</span>
+    <span class="main">にっこり</span>
+  </button>
+</p>
+
+</body>
+</html>

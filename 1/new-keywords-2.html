@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>日本語テキストでのmin-content</title>
+  <style>
+  .container {
+    width: 500px;
+    border: 1px solid silver;
+  }
+
+  .child {
+    margin-block: 0.5em;
+    background-color: mistyrose;
+  }
+
+  .min-content {
+    width: min-content;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="child min-content">
+    朝昼晩
+  </div>
+  <div class="child min-content">
+    朝昼晩。
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

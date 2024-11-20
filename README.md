@@ -1,4 +1,4 @@
-# 2024-css-centetring
+# 2024-css-centering
 
 CodeGrid連載「できる！中央寄せ 2024年版」に掲載されたデモです。
 
